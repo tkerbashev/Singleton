@@ -1,6 +1,8 @@
 ﻿using Singleton;
 
-var scenes = new List<Scene>() {new Scene(5), new Scene(3), new Scene(7)};
+Console.WriteLine("Singleton Creational Design Pattern example\n");
+
+var scenes = new List<Scene>() {new(5), new(3), new(7)};
 
 var iScene = 1;
 foreach (var scene in scenes)

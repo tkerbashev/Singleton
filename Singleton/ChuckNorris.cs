@@ -3,7 +3,7 @@
     internal class ChuckNorris : IFighter
     {
         // There can be only one Chuck Norris!
-        private static readonly Lazy<ChuckNorris> _instance = new Lazy<ChuckNorris>(() => new ChuckNorris());
+        private static readonly Lazy<ChuckNorris> _instance = new(() => new ChuckNorris());
         
         public static ChuckNorris Instance => _instance.Value;
 
